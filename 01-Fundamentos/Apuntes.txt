@@ -16,7 +16,7 @@ ejemplo: console.log('%c Mis variables', 'color:green; font-weight: bold');
     -Boolean = true - false
     -Null = sin ningun valor.
     -Undefined = que aun no se le ha asignado valor.
-    (- Null y undefined son valores totalmente diferentes.)
+    (- Null y undefined son valores totalmente diferentes).
     -Number = todo lo que tiene que ver con numeros (enteros, dobles, flotantes, etc).
     -String = cadenas de cracteres.
     -Symbol = Es un valor unico que no es igual a ningun otro valor.
@@ -41,6 +41,10 @@ ejemplo: console.log('%c Mis variables', 'color:green; font-weight: bold');
 
 OBJETOS LITERALES 
 -Los objetos literales son objetos que tienen pares de valores.
+-Cuando se imprimen los elementos de un objeto se imprimen en orden alfabetico, 
+    no importa el orden en que los hayamos creado.
+-Si se desea colocar un nombre espaciado a algun elemento del arreglo, se debe colocar entre comillas simples,
+    ya que JS no permite uso de caracteres especiales en los nombres.    
 
 
 
