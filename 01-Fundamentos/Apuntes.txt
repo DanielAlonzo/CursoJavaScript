@@ -1,0 +1,47 @@
+-Los archivos <script> es recomendable que vayan al final del <body>
+-el codigo script no se debe hacer en un mismo espacio con el html, es mejor llamar un src con la direccion del archivo .js con todas las funciones script.
+-Polyfill= Es un codigo que provee el funcionamiento de una nueva caracteristica de JS (ES6), en versiones viejas como ES5.
+-Ccuando el caracter en consola es color gris es un string, si es morado es un numero.
+-Se pueden agregar colores y estilos a las letras de la consola importando comandos de css, por 
+ejemplo: console.log('%c Mis variables', 'color:green; font-weight: bold');
+-Las constantes se les pone nombre en mayusculas: const SUMA= a+b;
+-BreakPoint=Punto en que se detiene el programa.
+-Si a una variable no se le da un valor, la consola mostrara valor 'undefined'.
+-Path=ruta de archivos llamados.
+-No utilizar variables de tipo VAR, ya que estas se almacenan en el apartado'window'
+ y esto puede causar problemas al sobreescribirse.
+-Las referencias que estan en el objeto window no son reconocidas en Node.
+-JavaScript es sensible a mayusculas.
+**DATOS PRIMITIVOS EN JS**
+    -Boolean = true - false
+    -Null = sin ningun valor.
+    -Undefined = que aun no se le ha asignado valor.
+    (- Null y undefined son valores totalmente diferentes.)
+    -Number = todo lo que tiene que ver con numeros (enteros, dobles, flotantes, etc).
+    -String = cadenas de cracteres.
+    -Symbol = Es un valor unico que no es igual a ningun otro valor.
+
+-PALABRAS RESERVADAS = palabras que tienen un uso especifico para el cual fueron creadas.
+-No se pueden poner nombres a las variables, que empiecen con numeros, ejemplo: let 1abc;
+-No es buena practica colocar caracteres especiales como la ñ en los nombres de las variables.
+-ARREGLOS = Son un objeto muy parecido a una lista de informacion, que contienen un grupo de elementos.
+    -Usualmente la informacion dentro de los arreglos es del mismo tipo de datos.
+    -Los metodos son funciones que vienen internas de los arreglos y las propiedades son
+        como variables que vienen dentro de todos los arreglos.
+    -La propiedad length muestra la cantidad de elementos contenidos en el arreglo.
+    -forEach ejecuta una instruccion por cada uno de los elementos del arreglo.
+      Se compone asi : forEach((elemento, indice, arreglo)
+    El metodo push aniade un nuevo elemento al arreglo y devuelve el nuevo tamanio del arreglo.
+    El metodo unshift inserta un nuevo elemento al inicio del arreglo.
+    El metodo pop elimina el ultimo elemento del arreglo y lo retorna.
+    El metodo splice Elimina elementos de un arreglo y, si es necesario, inserta nuevos elementos en su lugar, 
+    devolviendo los elementos eliminados.      
+    El metodo indexOf muestra en que lugar del arreglo se encuentra el valor que escribamos, es sencible a 
+    mayusculas. Si muestra el valor -1 significa que no encontro el valor.
+
+OBJETOS LITERALES 
+-Los objetos literales son objetos que tienen pares de valores.
+
+
+
+
