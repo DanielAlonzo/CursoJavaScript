@@ -26,3 +26,27 @@ console.log('ultimo traje:', personaje.trajes.pop());
 const x = 'vivo';
 console.log('vivo', personaje[x])
 console.log('Ultima pelicula', personaje['ultima pelicula'])
+
+//mas detalles
+//Borrar una propiedad
+delete personaje.edad
+console.log(personaje)
+
+//crear propiedad en ejecucion 
+personaje.casado=true
+//trabajar objeto como si fuera un arreglo**
+const entriesPares = Object.entries(personaje)
+console.log(entriesPares)
+
+//bloquear modificaciones directas, no bloquea las modificaciones a objetos dentro del objeto*
+Object.freeze(personaje)
+
+personaje.dinero=10000000
+personaje.direccion.ubicacion=10.30//*objeto dentro del objeto si se puede cambiar
+console.log(personaje)
+
+//listar todas las propiedades (solo nombres) que tiene el objeto**
+const propiedades = Object.getOwnPropertyNames(personaje)//solo nombres
+const valores     = Object.values(personaje)//solo valores
+console.log(propiedades)
+console.log(valores)

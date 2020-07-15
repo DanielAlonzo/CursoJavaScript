@@ -44,8 +44,55 @@ OBJETOS LITERALES
 -Cuando se imprimen los elementos de un objeto se imprimen en orden alfabetico, 
     no importa el orden en que los hayamos creado.
 -Si se desea colocar un nombre espaciado a algun elemento del arreglo, se debe colocar entre comillas simples,
-    ya que JS no permite uso de caracteres especiales en los nombres.    
+    ya que JS no permite uso de caracteres especiales en los nombres.  
+-Para elliminar una propiedad de un objeto solo se debe colocar la palabra delete antes del llamado de la propiedad.
+    ejemplo: delete personaje.edad.
+-Object.entries permite manejar un objeto como si fuera un arreglo.
+-Para bloquear modificaciones de las propiedades del objeto se debe realizar la 
+ siguiente consulta: Object.freeze(personaje).
+-listar todas las propiedades que tiene el objeto: 
+    const propiedades = Object.getOwnPropertyNames(personaje).
+-listar todas las propiedades (solo nombres) que tiene el objeto**
+    const propiedades = Object.getOwnPropertyNames(personaje)//solo nombres
+    const valores     = Object.values(personaje)//solo valores
+    console.log(propiedades)
+    console.log(valores)     
+
+FUNCIONES
+
+-Su objetivo principal es centralizar la logica de un procedimiento que se puede
+ repetir varias veces.
+-Los parentesis () son un indicativo de que es una funcion.
+-Es buena practica que las definiciones de las funciones siempre esten arriba y el llamado de estas 
+ este abajo.
+-cuando  la funcion no tenga un return explicitu, retornará undeffined
+
+PROTIP-RETORNO
+-Cuando las propiedades de un objeto y los parametros de la funcion sean homonimos
+ se puede evitar : nombre: nombre,  y usar solo nombre,  ver ejemplo en crearPersona()
+-La funcion flecha no maneja el objeto 'arguments' 
+
+REFERENCIAS
+-El Parametro Spread separa los elementos, a diferencia del parametro rest '...' que une los elementos 
+  contenidos entre parentesis, ver ejemplo en protip-retorno.js
+  --Este parametro se usa para romper las referencias de JS, para poder trabajar objetos, hacer igualaciones que
+    apunten a diferentes espacios en memoria.
+-El metodo slice() tambien separa los elementos y regresa los elementos que se especifiquen. 
+
+FUNCION IF-ELSE
+-La duncion if() espera un valor booleano.
+
+LOGICA BOOLEANA => Ver logica-booleana.js
+
+OPERADOR CONDICIONAL TERNARIO
+
+- Para concatenar elementos es mejor usar '${}' dentro de los simbolos ``, ejemplo:
+  `La suma es: ${resultado}`;....el simbolo + ya no se recomienda usar por problemas en casos
+   cuando hay numeros en ambos extremos y no se requiere sumar.
+- Includes es un metodo que tienen los arreglos para preguntar si algo existe dentro
+   del arreglo.    
 
 
+VER IRONLADY
 
 
